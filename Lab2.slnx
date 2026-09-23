@@ -3,5 +3,9 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="fifth/fifth.vcxproj" />
   <Project Path="first/first.vcxproj" />
+  <Project Path="fourth/fourth.vcxproj" />
+  <Project Path="second/second.vcxproj" />
+  <Project Path="third/third.vcxproj" />
 </Solution>

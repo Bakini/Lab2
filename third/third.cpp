@@ -38,21 +38,20 @@ void qs(int* items, int left, int right)
 }
 
 int main() {
-	srand(time(NULL));
 	const int count = 10000;
 	int items[count];
 	clock_t start, end;
 	for (int i = 0;i < count;i++) {
-		items[i] = rand() % 101;
+		items[i] = count - i;
 	}
-	
+
 	start = clock();
 	shell(items, count);
 	end = clock();
 	std::cout << "Shell: " << (double)(end - start) / CLOCKS_PER_SEC << "\n";
 
 	for (int i = 0;i < count;i++) {
-		items[i] = rand() % 101;
+		items[i] = count - i;
 	}
 	start = clock();
 	qs(items, 0, count - 1);
